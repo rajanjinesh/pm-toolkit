@@ -1,0 +1,14 @@
+{
+  "name": "pm-toolkit-local",
+  "description": "Local marketplace for the pm-toolkit plugin",
+  "owner": {
+    "name": "Rajan"
+  },
+  "plugins": [
+    {
+      "name": "pm-toolkit",
+      "source": "./",
+      "description": "PM workflow: connection test, PRD in Notion, PRD testing, ship and sync status"
+    }
+  ]
+}

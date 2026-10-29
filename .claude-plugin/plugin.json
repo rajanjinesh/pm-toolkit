@@ -1,0 +1,8 @@
+{
+  "name": "pm-toolkit",
+  "version": "1.0.0",
+  "description": "PM workflow: connection test, PRD in Notion, PRD testing, ship and sync status",
+  "author": {
+    "name": "Rajan"
+  }
+}
