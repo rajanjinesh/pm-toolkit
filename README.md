@@ -20,7 +20,7 @@ Because the commands come from a plugin, their names start with `pm-toolkit:`.
 
 ## Install
 
-You need Claude Code installed. This repository is both the plugin and a small marketplace that lists it.
+You need Claude Code installed. This repository is a small marketplace (`.claude-plugin/marketplace.json`) that lists the plugin, which lives in `plugins/pm-toolkit`.
 
 **From GitHub** (anyone can do this), in a terminal:
 
@@ -38,10 +38,10 @@ Or, inside a Claude Code session:
 
 **From a folder on your computer**: download or clone this repository, then use the folder's path instead, for example `claude plugin marketplace add D:\Projects\pm-toolkit`.
 
-To try it for one session without installing, start Claude Code with the plugin folder:
+To try it for one session without installing, start Claude Code with the plugin folder (the one inside `plugins`):
 
 ```
-claude --plugin-dir D:\Projects\pm-toolkit
+claude --plugin-dir D:\Projects\pm-toolkit\plugins\pm-toolkit
 ```
 
 After you change a file in the plugin, run `/reload-plugins` in the session.
@@ -68,15 +68,18 @@ Your project should have a `CLAUDE.md` that says where the PRD lives, which envi
 ```
 pm-toolkit/
 ├── .claude-plugin/
-│   ├── plugin.json         the plugin's name, version and author
-│   └── marketplace.json    lets you install it from this folder
-├── .mcp.json               Notion and Figma connections
-├── commands/
-│   ├── connection-test.md
-│   ├── new-prd.md
-│   └── test-prd.md
-├── skills/
-│   └── ship-feature/
-│       └── SKILL.md
+│   └── marketplace.json        lets you install the plugin from this repository
+├── plugins/
+│   └── pm-toolkit/             the plugin itself
+│       ├── .claude-plugin/
+│       │   └── plugin.json     the plugin's name, version and author
+│       ├── .mcp.json           Notion and Figma connections
+│       ├── commands/
+│       │   ├── connection-test.md
+│       │   ├── new-prd.md
+│       │   └── test-prd.md
+│       └── skills/
+│           └── ship-feature/
+│               └── SKILL.md
 └── README.md
 ```
