@@ -26,14 +26,14 @@ You need Claude Code installed. This repository is a small marketplace (`.claude
 
 ```
 claude plugin marketplace add rajanjinesh/pm-toolkit
-claude plugin install pm-toolkit@pm-toolkit-local
+claude plugin install pm-toolkit@pm-toolkit
 ```
 
 Or, inside a Claude Code session:
 
 ```
 /plugin marketplace add rajanjinesh/pm-toolkit
-/plugin install pm-toolkit@pm-toolkit-local
+/plugin install pm-toolkit@pm-toolkit
 ```
 
 **From a folder on your computer**: download or clone this repository, then use the folder's path instead, for example `claude plugin marketplace add D:\Projects\pm-toolkit`.
